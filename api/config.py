@@ -1,6 +1,0 @@
-
-KAFKA_TOPIC = 'emoji_topic'
-KAFKA_SERVER = 'localhost:9092'
-FLASK_HOST = '0.0.0.0'
-FLASK_PORT = 5000
-FLUSH_INTERVAL = 0.5

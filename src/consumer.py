@@ -24,7 +24,7 @@ from pyspark.sql import functions as F
 
 # Add parent directory to path for imports
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from utils.kafka_setup import ensure_topics_exist
+from kafka_setup import ensure_topics_exist
 # emoji_cumulative_counts = {
 # }
 

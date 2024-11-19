@@ -48,7 +48,7 @@ class Subscriber:
                 for topic_partition, records in messages.items():
                     for record in records:
                         self.process_message(record.value)
-                        self.send_message(processed_message)
+                        self.send_message(record.value)
         except Exception as e:
             print(f"Error in subscriber {self.subscriber_id}: {str(e)}")
     def send_message(self, message):

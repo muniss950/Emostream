@@ -4,8 +4,9 @@ import json
 import threading
 import time
 import random  # Missing import
-
+from flask_cors import CORS
 app = Flask(__name__)
+CORS(app)
 
 # Initialize the Kafka producer
 producer = KafkaProducer(
